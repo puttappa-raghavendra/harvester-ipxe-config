@@ -1,5 +1,5 @@
 #!ipxe
 
-kernel http://145.40.82.139/harvester-master-vmlinuz-amd64 ip=dhcp net.ifnames=1 rd.cos.disable rd.noverifyssl root=live:http://145.40.82.139/harvester-rootfs-amd64.squashfs console=ttyS1,115200 harvester.install.automatic=true harvester.install.config_url=https://metadata.platformequinix.com/userdata
-initrd http://145.40.82.139/harvester-master-initrd-amd64
+kernel http://10.98.45.1/harvester/harvester-v1.0.0-vmlinuz-amd64 ip=dhcp net.ifnames=1 rd.cos.disable rd.noverifyssl root=live:http://10.98.45.1/harvester/harvester-v1.0.0-rootfs-amd64.squashfs console=ttyS1,115200 harvester.install.automatic=true harvester.install.config_url=https://metadata.platformequinix.com/userdata
+initrd http://10.98.45.1/harvester/harvester-v1.0.0-initrd-amd64
 boot
