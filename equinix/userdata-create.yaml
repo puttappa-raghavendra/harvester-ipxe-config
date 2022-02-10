@@ -2,16 +2,16 @@
 token: metal-token
 os:
   ssh_authorized_keys:
-  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwdblnr6P0+eQ3Z6anbVQEq0RKy1I+sL3xj10Lg++F4vQwOPUXrIs+YaTb4jwIrGfm94ORb9slsn0Smi6aBA3uYtaSb3Sbh06biguoBA3s9qbko1xUHEHY3MQTqvS9/8oiSix80z9CfwekdQ59ZWiT49plOiNc2+g5+5Fu+gus1L8F/TeI6sqJ+xfibHhEz7RPI4QPueDP26EyMpEhkXth6fiAbCwUvakAcaE4fU9u2/4i29GlhB0xwMuHToFa8c3lYgEuwJvYsZmLIOpVqZExXH8UTU0nXp2Y6S9irkkTnpd+CRFulRnRYAzKZS/ziFxguK4xy5lnWlgsmyOzBh1zraL9+i2XoJrNxCI29CrwwIzV/k2strSFJ+pRqFJ4CzO+HAntL06Qb80avXjlrOheZv46qvQ2sZR4D7TYk7YoN7xoAj8iAwXyB9+V9E5wbAE3uzrQ8IUXt2KluxJAhZbj/Gzpv1SxggWvIGYWa8RR61YUoRtaQuHbA5yGGyiT9tc= aryanraghav@MacBook-Pro
-  password: hybridcloud
+  - ssh-rsa
+  password: p@ssword
 install:
   mode: create
   networks:
-    harvester-mgmt:   
+    harvester-mgmt:    # The management bond name. This is mandatory.
       interfaces:
       - name: eth0
       default_route: true
       method: dhcp
   device: /dev/sda
-  iso_url: https://releases.rancher.com/harvester/v0.3.0/harvester-v0.3.0-amd64.iso
+  iso_url: https://releases.rancher.com/harvester/master/harvester-master-amd64.iso
   tty: ttyS1,115200n8
